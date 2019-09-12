@@ -37,9 +37,38 @@ console.log(result) // -1
 
 **/
 
+// Input is 2 number a, b
+// Output :either a boolean,0,-1 depending on the calculation
+// step1: We need to test if a > b then return true
+//step 2: Return false if b<a then return false
+//step 3: if a=b then return 0
+// step 4: Create a condition that tests to see if a and b are numbers and return -1 if they are not and if they are numbers than test the below conditions
+//Using the typeof operator 
 
+var a;
+var b;
 
 function isBigger(a, b) {
-	//Your code here
-	
+	if(typeof(a)==="number" && typeof(b)==="number")
+	{
+		if(a>b){
+			return true;
+		}
+		else if (b>a){
+			return false;
+		}
+         else{
+           return("0");
+         }
+
+	}
+	else
+	{
+		return("-1");
+	}
+
 }
+
+var display=isBigger("4",1);
+console.log(display);
+
