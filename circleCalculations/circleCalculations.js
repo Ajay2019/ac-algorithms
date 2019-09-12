@@ -4,7 +4,19 @@
 
 //Bonus 2: Make both numbers whole integers (aka round to the nearest integer) 
 
-function circleCalculation () {
-	//your code here
+// Given the radius from the 
 
-circleCalculation(10);
+
+
+
+function circleCalculation (radius) {
+	var area;
+	var perimeter;
+
+	area=Math.round(Math.PI *Math.pow(radius,2));
+	perimeter= Math.round(2 * Math.PI * radius);
+	return("The area of the circle is" + area + " and the perimeter of the circle is" + perimeter);
+
+ }
+var show=circleCalculation(10);
+console.log(show);
