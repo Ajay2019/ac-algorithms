@@ -5,10 +5,31 @@
 
 // For example: 5! = 1 * 2 * 3 * 4 * 5 = 120
 
+//Input is a whole number
+//output is a number which is the factorial and that is the output of multiplying the numbers
+//Using a variable to store the output
+//Checking if there is a method in js to do the factorial 
+// Loop: we need to start at 1 and then end at the number that is the parameter
+
+
+
 // Check out Arithmetic Operators https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 
-function factorializeIt(num) {
-  //your code here
-}
 
-factorializeIt(5);
+  function factorializeIt(num) {
+  
+ 
+
+      var n=1;
+      
+        for(i=1;i<=num;i++){
+          
+         n*=i;
+         
+        }
+      return n;
+    }
+         
+    
+    var display=factorializeIt(4);
+    console.log(display);
