@@ -17,9 +17,21 @@
 // findLongestWord("Google do a barrel roll") should return 6.
 // findLongestWord("What is the average airspeed velocity of an unladen swallow") should return 8.
 // findLongestWord("What if we try a super-long word such as otorhinolaryngology") should return 19.
-
+// Input a string
+//output a number
+//We need to look at the length of each word, we ned
 
 function findLongestWord(str) {
-  //your code here
+  var array=str.split(" ");
+   var longword = array[0].length;
+  for(i=0;i<array.length;i++){
+    if(array[i].length > longword){
+      longword=array[i].length;
+    }
+    
+  }
+  console.log(longword);
 }
 
+findLongestWord("AvanthiJandhyala hello");
+findLongestWord("happy birthday");
