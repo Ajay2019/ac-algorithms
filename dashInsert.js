@@ -25,6 +25,17 @@ console.log(result) // "1-3"
 
 **/
 
+//create a variable to store the output of the string
+//create a variable to store the transformation of the number first to a string and then to an array
+
 function dashInsert(str) {
-	// Your code
+	var output="";
+	var array=num.toString().split("");
+	for(var i=0;i<array.length;i++){
+		if(array[i]%2 === 1 && array[i+1] % 2 === 1){
+             output=output + array[i] + "-";
+		} else{
+			output=output+ array[i];
+		}
+	}
 }
