@@ -17,6 +17,21 @@
 			 <button id="lib-button">Lib it!</button>
 			  
 			 <div id="story"></div>  
+			 <script>
+				function madLibs() {
+                 var storyDiv = document.getElementById("story");
+                 var name = document.getElementById("name").value;
+                 var adjective = document.getElementById("adjective").value;
+                 var noun = document.getElementById("noun").value;
+                storyDiv.innerHTML = name + " is a beautiful  " + adjective + " " + noun + "is so pretty";
+    }
+
+                var libButton = document.getElementById('lib-button');
+                libButton.addEventListener('click', madLibs);
+				
+				
+				</script>
+
 		</body>
 	</html>
 	
