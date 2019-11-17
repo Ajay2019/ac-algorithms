@@ -14,6 +14,27 @@
 //
 //    For example, given array A = [3, 8, 9, 7, 6] and K = 3, the function should return [9, 7, 6, 3, 8].\
 
-function cyclicRotation(arr, rotation){
-    //Your code here...
-}
+function solution(arr, K) {
+    if (arr.length <= 1)
+      return arr;
+    
+    var B = [];
+    
+    for (var i = 0; i < arr.length; i++) {
+      
+      if ((i+K%arr.length) >= arr.length) {
+        
+        B[(i+K%arr.length) - arr.length] = arr[i];
+      
+      } else {
+       
+        B[(i+K%arr.length)] = arr[i];
+      }
+    }
+    
+    return B;
+    
+  }
+  
+  var newk= solution([1, 1, 2, 3, 5], 4);
+  console.log(newk);
